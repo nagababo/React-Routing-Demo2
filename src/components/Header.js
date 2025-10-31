@@ -1,7 +1,16 @@
 import React from 'react'
 import "./Header.css"
+import { useNavigate } from 'react-router-dom'
+import { useAuth } from "../context/AuthContext"
 
 function Header({ toogleSidebar }) {
+  const navigate = useNavigate()
+  const { logout } = useAuth()
+  const handleLogout = () => {
+    logout()
+    navigate("/login")
+
+  }
   return (
     <div className='header'>
       <div header_left>
@@ -29,7 +38,7 @@ function Header({ toogleSidebar }) {
         </button>
 
         <button
-          onClick={() => { }}
+          onClick={handleLogout}
           title="Logout"
         >
           ⎋
