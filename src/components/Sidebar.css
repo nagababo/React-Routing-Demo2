@@ -1,0 +1,119 @@
+/* .sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.sidebar-link {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.sidebar-link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+} */
+
+.sidebar {
+  width: 240px;
+  background-color: var(--color-secondary);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--color-border);
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: var(--color-text-inverse);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.sidebar-nav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+}
+
+.sidebar-group {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--spacing-sm);
+}
+
+.sidebar-group-title {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-text);
+  padding: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+}
+
+.sidebar-group-title:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.sidebar-submenu {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--spacing-xs);
+  margin-left: var(--spacing-sm);
+}
+
+.sidebar-link {
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  transition: background 0.2s;
+}
+
+.sidebar-link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.sidebar-link.active {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-inverse);
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+}
+
+.arrow.open {
+  transform: rotate(90deg);
+}
+
+.sidebar-footer {
+  padding: var(--spacing-sm);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  border-top: 1px solid var(--color-border);
+}
+

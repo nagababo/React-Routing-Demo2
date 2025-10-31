@@ -1,0 +1,53 @@
+/* ==========================
+   variables.css
+   Global Design Tokens
+   ========================== */
+:root {
+  /* 🎨 Colors */
+  --color-primary: #007acc;
+  --color-primary-light: #5ab0f7;
+  --color-primary-dark: #005fa3;
+
+  --color-secondary: #f0f0f0;
+  --color-accent: #ff9900;
+
+  --color-bg: #ffffff;
+  --color-surface: #fafafa;
+  --color-border: #e0e0e0;
+
+  --color-text: #222222;
+  --color-text-light: #555555;
+  --color-text-inverse: #ffffff;
+
+  /* ✍️ Typography */
+  --font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem;   /* 16px */
+  --font-size-lg: 1.25rem;  /* 20px */
+  --font-size-xl: 1.5rem;   /* 24px */
+  --line-height: 1.5;
+
+  /* 📏 Spacing (margins, paddings) */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem;  /* 8px */
+  --spacing-md: 1rem;    /* 16px */
+  --spacing-lg: 1.5rem;  /* 24px */
+  --spacing-xl: 2rem;    /* 32px */
+
+  /* 🧱 Borders & Radius */
+  --border-width: 1px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* 🌫 Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+
+  /* 📱 Breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}

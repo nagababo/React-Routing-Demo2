@@ -1,0 +1,16 @@
+/* header.css */
+.header {
+  width: 100%; 
+  grid-area: header;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: var(--header-height);
+}
+
+.header__brand { font-weight: 700; font-size: 18px; }
+.header__menu-btn { display: none; background: transparent; border: none; font-size: 20px; }
+.header_right { display: flex; align-items: center; gap: 16px; }
+.header_left { display: flex; align-items: center; gap: 16px; }

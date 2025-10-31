@@ -1,0 +1,80 @@
+/* ======================================
+   reset.css
+   Clean, modern CSS Reset for React apps
+   ====================================== */
+
+/* Box sizing and zero margins everywhere */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default body margin and ensure 100% height */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Improve text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove list styles on ul, ol */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove link underlines and color */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default button styles */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* Make images and media elements block-level and responsive */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove default form element styles */
+input, textarea, select {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Headings inherit font sizing (will style manually) */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Remove default quotes from blockquotes */
+blockquote::before,
+blockquote::after {
+  content: "";
+}
+
+/* Remove table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set base line-height for consistency */
+body, input, button, textarea, select {
+  line-height: 1.5;
+}
