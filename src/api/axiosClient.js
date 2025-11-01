@@ -1,16 +1,35 @@
 // api/axiosClient.js
 import axios from "axios";
-import { getUserFromStorage, logoutUser } from "services/authService";
+import envConfig from "../config/envConfig";
+import { getUserFromStorage, logoutUser } from "../services/authService";
 
-// ✅ Create Axios instance
+// // ✅ Create Axios instance
+// const axiosClient = axios.create({
+//   baseURL: import.meta.env.VITE_API_BASE_URL || process.env.REACT_APP_API_BASE_URL, // .env driven
+//     headers: {
+//     "Content-Type": "application/json",
+//   },
+//   timeout: 10000, // 10s timeout (optional but good practice)
+// });
+
+// const axiosClient = axios.create({
+//   baseURL: "https://reqres.in/api",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   timeout: envConfig.TIMEOUT, //10s timeout (optional but good practice)
+// });
+
+
+const USE_MOCK_API = true;
+
 const axiosClient = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || process.env.REACT_APP_API_BASE_URL, // .env driven
-  headers: {
-    "Content-Type": "application/json",
-  },
-  timeout: 10000, // 10s timeout (optional but good practice)
+  baseURL: USE_MOCK_API
+    ? "https://run.mocky.io/v3/5185415ba171ea3a00704eed"
+    : "https://reqres.in/api",
+  headers: { "Content-Type": "application/json" },
+  timeout: 10000,
 });
-
 
 // ✅ Request Interceptor
 axiosClient.interceptors.request.use(

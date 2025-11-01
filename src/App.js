@@ -8,9 +8,12 @@ import Admin  from "./pages/Admin";
 import Home from "./pages/Home"
 import { AuthProvider } from "./context/AuthContext";
 
+import { NewAuthProvider } from "./context/NewAuthContext";
+
 function App() {
   return (
     <AuthProvider>
+          <NewAuthProvider>
 
     
     <Router>
@@ -36,7 +39,10 @@ function App() {
 
       </Routes>
     </Router>
-      </AuthProvider>
+      </NewAuthProvider>
+
+    </AuthProvider>
+
   );
 }
 
