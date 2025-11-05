@@ -13,7 +13,7 @@ function Header({ toogleSidebar }) {
   }
   return (
     <div className='header'>
-      <div header_left>
+      <div className='header-left'>
         <button
           onClick={toogleSidebar}
           aria-label="Toggle sidebar"

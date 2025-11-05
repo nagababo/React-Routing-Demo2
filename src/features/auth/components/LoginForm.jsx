@@ -9,8 +9,8 @@ export default function Login() {
   const { login, loading } = useAuth();
   const navigate = useNavigate();
 
-  const [username, setUsername] = useState("kminchelle"); // default dummy user
-  const [password, setPassword] = useState("0lelplR");    // default dummy password
+  const [username, setUsername] = useState("Nagababu"); // default dummy user
+  const [password, setPassword] = useState("Password");    // default dummy password
   const [error, setError] = useState("");
 
   const handleLogin = async (e) => {
