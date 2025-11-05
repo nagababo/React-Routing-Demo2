@@ -9,8 +9,10 @@ import { userService } from "./userService";
 
 function* fetchUsersWorker(action) {
   try {
-    const { limit = 10, skip = 0 } = action.payload || {};
-    const users = yield call(userService.fetchUsers, limit, skip);
+    const { limit = 10, skip = 0, filters } = action.payload || {};
+    //const filters = action.payload || {};
+
+    const users = yield call(userService.fetchUsers, limit, skip, filters);
     yield put(fetchUsersSuccess(users));
   } catch (error) {
     yield put(fetchUsersFailure(error.message));

@@ -1,10 +1,10 @@
 import React from 'react'
-import UserList from '../features/user/components/UserList'
+import UserListContainer from '../features/user/components/UserListContainer'
 
 function Users() {
   return (
     <>
-    <UserList/>
+    <UserListContainer/>
     </>
   )
 }
