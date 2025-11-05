@@ -132,6 +132,7 @@ axiosClient.interceptors.response.use(
   }
 );
 
+console.log("🚀 axiosClient baseURL →", axiosClient.defaults.baseURL);
 export default axiosClient;
 
 

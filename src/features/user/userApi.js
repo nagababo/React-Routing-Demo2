@@ -1,9 +1,13 @@
-import axiosClient from "./axiosClient";
+// src/features/users/userApi.js
+import axiosClient from "../../api/axiosClient";
 
-const userApi = {
-  getAll: () => axiosClient.get("/users"),
-  getById: (id) => axiosClient.get(`/users/${id}`),
-  update: (id, data) => axiosClient.put(`/users/${id}`, data),
+export const userApi = {
+  getUsers: async (limit = 10, skip = 0) => {
+    // Example: https://dummyjson.com/users?limit=10&skip=0
+
+    console.log(axiosClient,"axiosClient")
+    const response = await axiosClient.get(`/users?limit=${limit}&skip=${skip}`);
+    return response.data; // API returns { users, total, skip, limit }
+  },
 };
 
-export default userApi;

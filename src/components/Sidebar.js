@@ -35,7 +35,7 @@ const Sidebar = ({ links, onClose }) => {
       items: [
         { to: "/dashboard", label: "Dashboard" },
         { to: "/admin", label: "Admin", roles: ["admin"] },
-        { to: "/home", label: "Home" },
+        { to: "/users", label: "Users" },
       ],
     },
     {
