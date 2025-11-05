@@ -1,4 +1,4 @@
-// api/index.js
+api/index.js
 
 import authApi from "./authApi";
 import userApi from "./userApi";
