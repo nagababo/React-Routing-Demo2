@@ -6,14 +6,13 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Dashboard from "./pages/Dashboard";
 import Admin  from "./pages/Admin";
 import Home from "./pages/Home"
-import { AuthProvider } from "./context/AuthContext";
+import { AuthProvider } from "./features/auth/AuthContext";
 
-import { NewAuthProvider } from "./context/NewAuthContext";
 
 function App() {
   return (
     <AuthProvider>
-          <NewAuthProvider>
+         
 
     
     <Router>
@@ -39,7 +38,7 @@ function App() {
 
       </Routes>
     </Router>
-      </NewAuthProvider>
+    
 
     </AuthProvider>
 

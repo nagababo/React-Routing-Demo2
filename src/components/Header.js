@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Header.css"
 import { useNavigate } from 'react-router-dom'
-import { useAuth } from "../context/AuthContext"
+import { useAuth } from "../features/auth/AuthContext"
 
 function Header({ toogleSidebar }) {
   const navigate = useNavigate()

@@ -2,7 +2,7 @@
 import React,{useState} from "react";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css"
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../features/auth/AuthContext"
 
 /**
  * links: optional prop array: [{ to: "/home", label: "Home", roles: ["user","admin"] }, ...]
